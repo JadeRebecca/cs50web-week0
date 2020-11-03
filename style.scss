@@ -1,0 +1,134 @@
+$light-grey:#3c4043;
+$grey:#333;
+$dark-grey:#222;
+$very-dark-grey:#202124;
+$white:#f8f9fa;
+$white-border-hover:#dadce0;
+$red:#d93025;
+$blue:#4d90fe;
+$blue-gradient:#4787ed;
+$blue-border:#3079ed;
+$blue-hover:#357ae8;
+$blue-border-hover:#2f5bb7;
+
+body{
+    font-family: arial,sans-serif;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+main{
+    text-align:center;
+    margin-top:70px;
+    & form{
+        margin: auto;
+       
+    }
+}
+.search{
+    margin-top:25px;
+    & input{
+        background: #fff;
+        border: 1px solid #dfe1e5;
+        border-radius: 24px;
+        height: 44px;
+        width:500px;
+        &:hover{
+            box-shadow: 0 1px 6px rgba(32,33,36,.28);
+            border-color: rgba(223,225,229,0);
+        }
+
+    }
+}
+
+h1{
+    color:$red;
+    font-size:20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+h2{
+    color:$grey;
+    font-size:16px;
+    font-weight: 400;
+}
+nav{
+    text-align: right;
+    padding-right:20px;
+    & a{
+        padding-left:20px;
+    }
+}
+
+.logo-image{
+    position:relative;
+    margin:auto;
+    width: 25vw;
+    & img{
+        width: 100%;
+    }
+    & span{
+        color: $blue;
+        font-size: 1.5vw;
+        position:absolute;
+        bottom:0px;
+        right:0px;
+    }
+}
+
+form{
+    max-width:600px;
+}
+.advanced-form{
+    margin-top:8px;
+    & > label{
+        color: $dark-grey;
+        font-size:14px;
+        display: inline-block;
+        width:33%;
+    }
+    & > input{
+        width:64%;
+    }
+}
+%btn{    
+    min-width: 120px;
+    border-radius: 2px;
+   
+}
+.btn-group{
+    margin-top:25px;
+}
+.btn-white{
+    @extend %btn;
+    height: 36px;
+    font-size: 14px;
+    padding: 0 16px;
+    background:$white;
+    color:$light-grey;
+    border: 1px solid $white;
+    border: 1px solid #dadce0;
+    &:hover{
+        border: 1px solid $white-border-hover;
+        color:$very-dark-grey;
+    }
+}  
+.btn-blue{
+    @extend %btn;
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 5px;
+    float:right;
+    font-size: 11px;
+    padding: 0 12px;
+    font-weight: bold;
+    background:$blue;
+    background-image: -webkit-linear-gradient(top,$blue,$blue-gradient);
+    border: 1px solid $blue-border;
+    color: #fff;
+    &:hover{
+        background:$blue-hover;
+        background-image: -webkit-linear-gradient(top,$blue,$blue-hover);
+        border: 1px solid $blue-border-hover;
+    }
+}
