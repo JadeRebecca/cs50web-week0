@@ -1,5 +1,5 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: arial,sans-serif;
   margin-top: 10px;
   margin-left: 40px;
 }
@@ -8,23 +8,65 @@ main {
   text-align: center;
   margin-top: 70px;
 }
+
 main form {
   margin: auto;
 }
 
 .search {
+  margin: auto;
+  text-align: justify;
   margin-top: 25px;
-}
-.search input {
-  background: #fff;
+  /*background:rgb(207, 73, 73);*/
   border: 1px solid #dfe1e5;
   border-radius: 24px;
   height: 44px;
   width: 500px;
+  padding: 0;
 }
-.search input:hover {
-  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+
+.search:hover {
+  -webkit-box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+          box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
   border-color: rgba(223, 225, 229, 0);
+}
+
+.search input {
+  margin: 0px;
+  border: none;
+  height: 44px;
+  width: 400px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search > .icon {
+  color: #9aa0a6;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+.search > button {
+  cursor: pointer;
+  border: none;
+  margin-top: 5px;
+  padding: 5px 5px 7px;
+  /*padding:10px 0px;*/
+}
+
+.search > button:focus {
+  outline: none;
+}
+
+.search > button > .icon {
+  color: #4d90fe;
+  font-size: 1.5em;
+}
+
+input[type="text" i] {
+  padding: 0px;
 }
 
 h1 {
@@ -44,6 +86,7 @@ nav {
   text-align: right;
   padding-right: 20px;
 }
+
 nav a {
   padding-left: 20px;
 }
@@ -52,10 +95,13 @@ nav a {
   position: relative;
   margin: auto;
   width: 25vw;
+  /* background:blue;*/
 }
+
 .logo-image img {
   width: 100%;
 }
+
 .logo-image span {
   color: #4d90fe;
   font-size: 1.5vw;
@@ -71,17 +117,19 @@ form {
 .advanced-form {
   margin-top: 8px;
 }
+
 .advanced-form > label {
   color: #222;
   font-size: 14px;
   display: inline-block;
   width: 33%;
 }
+
 .advanced-form > input {
   width: 64%;
 }
 
-.btn-blue, .btn-white {
+.btn-white, .btn-blue {
   min-width: 120px;
   border-radius: 2px;
 }
@@ -99,6 +147,7 @@ form {
   border: 1px solid #f8f9fa;
   border: 1px solid #dadce0;
 }
+
 .btn-white:hover {
   border: 1px solid #dadce0;
   color: #202124;
@@ -117,10 +166,10 @@ form {
   border: 1px solid #3079ed;
   color: #fff;
 }
+
 .btn-blue:hover {
   background: #357ae8;
   background-image: -webkit-linear-gradient(top, #4d90fe, #357ae8);
   border: 1px solid #2f5bb7;
 }
-
 /*# sourceMappingURL=style.css.map */

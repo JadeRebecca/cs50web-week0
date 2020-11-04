@@ -1,3 +1,4 @@
+$grey-icon: #9aa0a6;
 $light-grey:#3c4043;
 $grey:#333;
 $dark-grey:#222;
@@ -26,19 +27,51 @@ main{
     }
 }
 .search{
+    margin:auto;
+    text-align: justify;
     margin-top:25px;
-    & input{
-        background: #fff;
-        border: 1px solid #dfe1e5;
-        border-radius: 24px;
-        height: 44px;
-        width:500px;
-        &:hover{
-            box-shadow: 0 1px 6px rgba(32,33,36,.28);
-            border-color: rgba(223,225,229,0);
-        }
-
+    /*background:rgb(207, 73, 73);*/
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 44px;
+    width:500px;
+    padding:0;
+    &:hover{
+        box-shadow: 0 1px 6px rgba(32,33,36,.28);
+        border-color: rgba(223,225,229,0);
     }
+    & input{
+       margin:0px;
+        border: none;
+        height: 44px;
+        width:400px;
+        &:focus{
+            outline:none;
+        }
+    }
+    > .icon{
+        color: $grey-icon;
+        padding-left:15px;
+        padding-right:20px;
+    }
+    > button{
+        cursor: pointer;
+        border:none;
+        margin-top: 5px;
+        padding: 5px 5px 7px;
+        &:focus{
+            outline:none;
+        }
+        /*padding:10px 0px;*/
+        >.icon{
+            color: $blue;
+            font-size:1.5em;
+        }
+    }
+}
+
+input[type="text" i] {
+    padding: 0px;
 }
 
 h1{
@@ -64,6 +97,7 @@ nav{
     position:relative;
     margin:auto;
     width: 25vw;
+   /* background:blue;*/
     & img{
         width: 100%;
     }
